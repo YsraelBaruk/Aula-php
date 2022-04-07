@@ -11,7 +11,7 @@
     <?php
         $produto = [
             [
-                'categora' => 'computadores',
+                'categoria' => 'computadores',
                 'itens' => [
                     'PC Gamer HP',
                     'Notebook Lenovo',
@@ -20,7 +20,7 @@
                 ]
             ],
             [
-                'categora' => 'periféricos',
+                'categoria' => 'periféricos',
                 'itens' => [
                     'Mouse',
                     'Monitor',
@@ -30,12 +30,12 @@
                 ]
             ]
         ];
-
         foreach($produto as $categoria){
-            echo '<h2>'.$Categoria['categoria'].'</h2>';
+            echo '<h2>'.$categoria['categoria'].'</h2>';
             echo '<ul>';
             foreach($categoria['itens'] as $produto){
                 echo '<li>'.$produto.'</li>';
+                
             }
             echo '</ul>';
         }
